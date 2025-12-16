@@ -5,6 +5,12 @@
     font-size: 1rem;      /* Standard readable size */
     margin-top: 5px;      /* Small space between subtitle and date */
 }
+
+header p {
+    margin: 5px 0;        /* Tightens the space above and below the subtitle */
+    font-size: 1.1rem;    /* Makes the "Half-day tutorial" text slightly larger */
+    color: #333;          /* Ensures it is dark grey/black */
+}
 /* 1. Global Settings */
 body {
     font-family: Arial, Helvetica, sans-serif;

@@ -65,9 +65,7 @@ header h1 {
 
 /* (Keep your nav, footer, and other styles the same) */
 /* You might need to force the H1 and H2 colors to white if they are overridden elsewhere */
-header h1, header .subtitle, header .email {
-    color: white !important;
-}
+
 h1 {
     color: #2c3e50;
     margin-top: 0;

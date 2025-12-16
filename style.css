@@ -1,10 +1,6 @@
-/* style.css */
-/* style.css */
+/* style.css - FINAL CLEAN VERSION */
 
-/* 1. Change the global font to match the SLiDE workshop */
-/* style.css */
-
-/* Global Font - simple, clean sans-serif like the image */
+/* 1. Global Settings */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -12,99 +8,52 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff; /* Image shows white background, not grey */
+    background-color: #fff; 
 }
 
+/* 2. Header Layout */
 header {
     background-color: #fff;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    text-align: left; /* KEY CHANGE: Left align everything */
+    text-align: left; /* Left align everything as requested */
 }
 
-/* The Banner Image */
+/* 3. Banner Image */
 .banner-img {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 25px; /* Space between image and title */
-    border-radius: 0;    /* The image in your example has sharp corners */
+    margin-bottom: 25px; 
+    border-radius: 0;    
 }
 
-/* The Main Title (Blue) */
+/* 4. The Main Title (Blue) */
 header h1 {
-    color: #0056B3;      /* The specific academic blue */
-    font-size: 2.2rem;   /* Large and bold */
+    color: #0056B3 !important; /* Forces the specific academic blue */
+    font-size: 2.2rem;   
     font-weight: 700;
-    margin: 0 0 10px 0;  /* Tight spacing below title */
+    margin: 0 0 10px 0;  
     line-height: 1.2;
 }
 
-/* The Subtitle line (e.g., "A full-day workshop...") */
+/* 5. The Subtitle (Bold) */
 .header-subtitle {
     font-size: 1.1rem;
-    font-weight: 700;    /* Bold */
-    color: #444;         /* Dark grey/black */
+    font-weight: 700;    
+    color: #444;         
     margin-bottom: 5px;
 }
 
-/* The Details line (e.g., Location/Date/Authors) */
+/* 6. The Details (Italic) */
 .header-meta {
     font-size: 1rem;
-    color: #666;         /* Lighter grey */
-    font-style: italic;  /* Italicized */
+    color: #666;         
+    font-style: italic;  
     margin-top: 0;
 }
-.banner-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
 
-/* (Keep your nav, footer, and other styles the same) */
-/* You might need to force the H1 and H2 colors to white if they are overridden elsewhere */
-
-h1 {
-    color: #2c3e50;
-    margin-top: 0;
-    font-size: 2.2em;
-}
-h2 {
-    color: #34495e;
-    border-bottom: 2px solid #e1e1e1;
-    padding-bottom: 10px;
-    margin-top: 40px;
-}
-h3 {
-    color: #555;
-    margin-top: 25px;
-}
-.subtitle {
-    font-size: 0.6em; /* Adjusted for h1 nesting */
-    display: block;
-    color: #7f8c8d;
-    font-weight: 300;
-    margin-top: 10px;
-}
-.authors {
-    margin-top: 20px;
-    font-weight: bold;
-}
-.email {
-    font-weight: normal;
-    color: #7f8c8d;
-    font-size: 0.9em;
-}
-.content-section {
-    background: #fff;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-/* Navigation Bar */
+/* 7. Navigation Bar */
 nav {
     background: #2c3e50;
     padding: 15px 0;
@@ -115,6 +64,7 @@ nav {
     margin-bottom: 20px;
     border-radius: 4px;
 }
+
 nav a {
     color: #fff;
     margin: 0 15px;
@@ -122,12 +72,36 @@ nav a {
     text-decoration: none;
     font-size: 1.1em;
 }
+
 nav a:hover, nav a.active {
     text-decoration: underline;
     color: #3498db;
 }
+
+/* 8. Content & Other Styles */
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 25px;
+}
+
+.content-section {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
 .schedule-item { margin-bottom: 15px; }
 .time { font-weight: bold; color: #2980b9; }
+
 footer {
     text-align: center;
     margin-top: 50px;

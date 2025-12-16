@@ -9,12 +9,30 @@ body {
     background-color: #f9f9f9;
 }
 header {
-    background-color: #fff;
-    padding: 40px;
+    /* Path to your image file */
+    background-image: url('banner.jpg');
+    
+    /* Ensures the image covers the whole area */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Existing styles (modified for visibility) */
+    background-color: #fff; /* Fallback color */
+    padding: 60px 20px;     /* Increased padding for a taller banner */
     border-bottom: 1px solid #eee;
     margin-bottom: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     text-align: center;
+    
+    /* Text color change to stand out against image */
+    color: white; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7); /* Adds shadow to text for readability */
+}
+
+/* You might need to force the H1 and H2 colors to white if they are overridden elsewhere */
+header h1, header .subtitle, header .email {
+    color: white !important;
 }
 h1 {
     color: #2c3e50;

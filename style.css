@@ -2,43 +2,59 @@
 /* style.css */
 
 /* 1. Change the global font to match the SLiDE workshop */
+/* style.css */
+
+/* Global Font - simple, clean sans-serif like the image */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
     color: #333;
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Image shows white background, not grey */
 }
 
-/* 2. Update the Header Text Colors */
-h1 {
-    color: #0056B3; /* The specific blue from your example */
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 2.2em;
-}
-
-/* 3. Update the Subtitle style */
-.subtitle {
-    font-size: 1.2em;
-    display: block;
-    color: #555;    /* Darker grey from the example */
-    font-weight: bold; /* Made bold as per the example */
-    margin-top: 5px;
-}
-
-/* --- Keep the rest of your CSS below this line --- */
 header {
     background-color: #fff;
-    padding: 40px;
-    border-bottom: 2px solid #0056B3; /* Changed border to match H1 blue */
+    padding-bottom: 20px;
     margin-bottom: 30px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: left; /* KEY CHANGE: Left align everything */
 }
 
+/* The Banner Image */
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px; /* Space between image and title */
+    border-radius: 0;    /* The image in your example has sharp corners */
+}
+
+/* The Main Title (Blue) */
+header h1 {
+    color: #0056B3;      /* The specific academic blue */
+    font-size: 2.2rem;   /* Large and bold */
+    font-weight: 700;
+    margin: 0 0 10px 0;  /* Tight spacing below title */
+    line-height: 1.2;
+}
+
+/* The Subtitle line (e.g., "A full-day workshop...") */
+.header-subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;    /* Bold */
+    color: #444;         /* Dark grey/black */
+    margin-bottom: 5px;
+}
+
+/* The Details line (e.g., Location/Date/Authors) */
+.header-meta {
+    font-size: 1rem;
+    color: #666;         /* Lighter grey */
+    font-style: italic;  /* Italicized */
+    margin-top: 0;
+}
 .banner-image {
     max-width: 100%;
     height: auto;

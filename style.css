@@ -1,5 +1,10 @@
 /* style.css - FINAL CLEAN VERSION */
-
+.meta {
+    color: #666;          /* The greyish color */
+    font-style: italic;   /* Makes it italic */
+    font-size: 1rem;      /* Standard readable size */
+    margin-top: 5px;      /* Small space between subtitle and date */
+}
 /* 1. Global Settings */
 body {
     font-family: Arial, Helvetica, sans-serif;

@@ -22,6 +22,27 @@ body {
     background-color: #fff; 
 }
 
+/* 1. Remove the bottom gap from the Header */
+header {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px !important; /* Small buffer so text doesn't hit the line */
+}
+
+/* 2. Remove the top gap from the Content Section */
+.content-section {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+}
+
+/* 3. Remove the default space above the word "Abstract" */
+.content-section h2:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* 4. Fix the paragraph margin issue in the header */
+header p {
+    margin-bottom: 5px; /* Tightens space between lines in the header */
+}
 /* 2. Header Layout */
 header {
     background-color: #fff;
